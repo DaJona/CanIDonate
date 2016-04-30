@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="CanIDonate.Base" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title>Can I Donate?</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="css/loading.css" />
+
+        <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="baseForm" runat="server">
+            <asp:ScriptManager runat="server" />
+
+            <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+
+            <asp:UpdateProgress runat="server" DisplayAfter="0">
+                <ProgressTemplate>
+                    <div class="showbox">
+                        <div class="loader">
+                            <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                    </div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+
+            <script src="js/jquery-1.11.3.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <asp:ContentPlaceHolder ID="javascript" runat="server"></asp:ContentPlaceHolder>
+        </form>
+    </body>
+</html>
