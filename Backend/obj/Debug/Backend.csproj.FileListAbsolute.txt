@@ -1,4 +1,0 @@
-D:\Jona\Proyectos VS\CanIDonate\Backend\bin\Debug\Backend.dll
-D:\Jona\Proyectos VS\CanIDonate\Backend\bin\Debug\Backend.pdb
-D:\Jona\Proyectos VS\CanIDonate\Backend\obj\Debug\Backend.dll
-D:\Jona\Proyectos VS\CanIDonate\Backend\obj\Debug\Backend.pdb
